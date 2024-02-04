@@ -32,4 +32,4 @@ jobs:
           SOURCE: vue-ci-cd # 注意这是npm run build生成的文件，要复制到阿里云静态服务器的文件夹名称
           REMOTE_HOST: ${{ secrets.SERVER_HOST }} # 你的阿里云公网地址
           REMOTE_USER: ${{ secrets.SERVER_USER }} # 阿里云登录后默认为 root 用户，并且所在文件夹为 root
-          TARGET: /root/my-repo # 打包后的 build 文件夹将放在 /root/my-repo
+          TARGET: /home/nginx # 打包后的 build 文件夹将放在 /root/my-repo
